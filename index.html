@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programming</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <header>
+            <img class="mao1" src="./assets/maoCima.png" alt="">
+            <img class="mao2" src="./assets/maoBaixo.png" alt="">
+        </header>
+
+        <main>
+            <section class="containerLabelInput">
+
+                <label for="from">Converter de</label>
+
+                <select name="" id="from">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Real Brasileiro">R$ Real Brasileiro</option>
+                    <option value="Dolar Americano">US$ Dolar Americano</option>
+                    <option value="Iene">JPY Iene</option>
+                </select>
+                
+            </section>
+
+            <section class="containerLabelInput">
+
+                <label for="to">Converter para</label>
+                <select name="" id="to">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Real Brasileiro">R$ Real Brasileiro</option>
+                    <option value="Dolar Americano">US$ Dolar Americano</option>
+                    <option value="Iene">JPY Iene</option>
+                </select>
+
+            </section>
+
+            <section class="containerLabelInput">
+
+                <label for="">Valor</label>
+                <input id="valorInput" type="text">
+
+            </section>
+
+            <button id="converterId">Converter</button>
+
+            <section class="display">
+
+                <div class="left">
+                    <div class="containerBandeiraFrom">
+                        <img id="idBrasilFrom" class="tamanhoBandeiras" src="./assets/brasil.png" alt="">
+                        <img id="idEuaFrom" class="tamanhoBandeiras" src="./assets/eua.png" alt="">
+                        <img id="idJapaoFrom" class="tamanhoBandeiras" src="./assets/japao.jpg" alt="">
+                        <img class="tamanhoBandeiras" src="./assets/money.png" alt="">
+                    </div>
+
+                    <div id="nomeMoedaId" class="nomeMoeda">
+                        <span></span>
+                    </div>
+
+                    <div id="valorFromId" class="valorFrom">
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="center">
+                    <img src="./assets/seta.png" alt="">
+                </div>
+
+                <div class="right">
+                    <div class="containerBandeiraTo">                        
+                        <img id="idEuaTo" class="tamanhoBandeiras" src="./assets/eua.png" alt="">
+                        <img id="idBrasilTo" class="tamanhoBandeiras" src="./assets/brasil.png" alt="">                        
+                        <img id="idJapaoTo" class="tamanhoBandeiras" src="./assets/japao.jpg" alt="">
+                        <img class="tamanhoBandeiras" src="./assets/money.png" alt="">
+                    </div>
+
+                    <div id="nomeMoedaIdRight" class="nomeMoeda">
+                        <span></span>
+                    </div>
+
+                    <div class="valorTo">
+                        <span id="valorConvertidoFinal"></span>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        
+
+    </body>
+
+    <script src="index.js" defer></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 300px;
+    width: 400px; 
+    display: flex; 
+    position: relative;
+    /* background-color: blue; */
+}
+
+header img {
+    height: 150px;
+    /* border: solid 1px black; */
+}
+
+main {
+    height: 600px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    gap: 10px;
+    box-shadow: 5px 5px 20px 5px black;
+}
+
+main .containerLabelInput {
+    height: 80px;
+    width: 99%;
+    display: flex;
+    flex-direction: column;        
+    /* background-color: rgb(128, 128, 128); */
+    
+}
+
+.containerLabelInput label {
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+}
+
+.containerLabelInput select {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 20px;
+    outline: none;
+    color: rgb(65, 65, 65);
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.containerLabelInput input {
+    font-size: 25px;
+    padding: 5px 20px;
+    outline: none;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+main button {
+    font-size: 40px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(28, 28, 28);
+}
+
+main .display {
+    height: 200px;
+    width: 100%;
+    border: solid 1px rgb(201, 201, 201);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display .left {
+    height: 95%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    /* background-color: red; */
+}
+
+.left .containerBandeiraFrom {
+    height: 100px;
+    width: 100px;
+    /* border: solid 1px black; */
+    position: relative;
+    
+}
+
+.nomeMoeda {
+    height: 40px;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    /* border: solid 1px black; */
+}
+
+.left .valorFrom {
+    height: 40px;
+    width: 98%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
+
+.tamanhoBandeiras {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    position: absolute;
+    
+}
+
+/* .setBandeiraInvisible {
+    z-index: 0;
+    opacity: 0;
+}
+
+.setBandeiraVisible {
+    z-index: 1;
+    opacity: 1;
+} */
+
+.display .center {
+    height: 95%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
+
+.center img {
+    height: 40px;
+}
+
+.display .right {
+    height: 95%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    /* background-color: green; */
+}
+
+.right .containerBandeiraTo {
+    height: 100px;
+    width: 100px;
+    /* border: solid 1px black; */
+}
+
+.right .valorTo {
+    height: 40px;
+    width: 98%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
+
+/* ------------------------------------------- */
+.mao1 {
+    position: absolute;
+    animation: mover 2s linear infinite;
+}
+
+@keyframes mover {
+    0% {
+        left:50px;
+        top: 0px;
+        rotate: 0deg;
+    }
+    100% {
+        left: 100px;
+        top: 50px;
+        rotate: 20deg;
+    }
+}
+
+/* ------------------------------------------- */
+
+.mao2 {
+    position: absolute;
+    animation: mover2 2s linear infinite;
+}
+
+@keyframes mover2 {
+    0% {
+        right:50px;
+        top: 180px;        
+    }
+    100% {
+        right: 100px;
+        top: 150px;
+    }
+}
+
+/* ------------------------------------------- */
+
+
+@media (max-width:430px) {
+    
+
+    body {        
+        display: flex;
+        align-items: center;
+        justify-content: center;         
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        width: 320px;
+        height: 85%;
+    }
+
+    .containerLabelInput select {
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+}
+
+
+
